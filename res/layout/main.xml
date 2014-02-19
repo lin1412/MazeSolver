@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <cs2114.mazesolver.MazeView android:id="@+id/mazeView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:clickable="true"></cs2114.mazesolver.MazeView>
+    <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/drawEraseMode" android:onClick="boxClicked" android:text="@string/DrawWall"></CheckBox>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/clearMaze" android:onClick="clearButtonClicked" android:text="@string/Clear"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/solveMaze" android:onClick="solveButtonClicked" android:text="@string/Solve"></Button>
+    </TableRow>
+    <TextView android:text="TextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.04" android:id="@+id/statusLabel"></TextView>
+</LinearLayout>
